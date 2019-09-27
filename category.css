@@ -1,0 +1,50 @@
+*, *:before, *, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.category {
+    margin: 5% 20%;
+}
+
+.firstline, .secondline {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.genretext {
+    justify-content: space-between;
+    display: flex;
+}
+
+.arrow {
+    width: 10%;
+    height: 10%;
+    margin: 20px 0;
+}
+
+.arrow2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*
+
+.haha {
+    margin-top: -80px;
+}
+
+.hahaha {
+    margin-bottom: -50px;
+}
+*/

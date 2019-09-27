@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+    <link rel="stylesheet" href="map.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b555ce4ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <header class="logo_header">
+        <a href="firstpage.html"><div class="both_owl">
+            <img src="awake.png" alt="Open eyes" class="open_eyes">
+            <img src="sleepy.png" alt="blink" class="full_blink">
+        </div></a>
+        <h3 id="title" class="title">VIBY LIBRARY</h3>
+    </header>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                M <br>
+                E<br>
+                N <br>
+                U <br>
+            </a>
+        </span>
+
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <div class="nav_top">
+            <a href="explore.html" class="nav_links"><img src="explore1.png" alt="e_icon" class="e_icon"></a>
+            <a href="event.html" class="nav_links"> <img src="events1.png" alt="e-icon" class="e_icon"></a>
+            <a href="print.html" class="nav_links"><img src="print1.png" alt="" class="e_icon"></a>
+            <a href="map.html" class="nav_links"> <img src="map1%20icon.png" alt="e_icon" class="e_icon"></a>
+        </div>
+        <div class="nav_bot">
+            <a href="scan.html" class="nav_links"><img src="borrow1.png" alt="" class="e_icon"></a>
+            <a href="place.html" class="nav_links"><img src="return1.png" alt="" class="e_icon"></a>
+
+        </div>
+    </div>
+
+    <div id="main">
+
+    <header></header>
+    <main>
+        <h2>MAP</h2>
+        <img src="mapcolors.png" alt="Map" id="map">
+        <h2 class="find-genre">Find a Genre</h2>
+        <div class="genre">
+            <div>
+               <p> <input type="checkbox">Arts	&amp; Photography</p>
+                <p><input type="checkbox">Biographies</p>
+                <p><input type="checkbox">Business</p>
+                <p><input type="checkbox">Children's Books</p>
+                <p><input type="checkbox">Comics &amp; Graphic Novels</p>
+                <p><input type="checkbox">Health</p>
+            </div>
+            <div>
+                <p><input type="checkbox">History</p>
+                <p><input type="checkbox">Law</p>
+                <p><input type="checkbox">Literature &amp;Fiction</p>
+                <p><input type="checkbox">Mystery &amp;Thriller</p>
+                <p><input type="checkbox">Parenting &amp;Relationships</p>
+                <p><input type="checkbox">Politics</p>
+            </div>
+            <div>
+                <p><input type="checkbox">Religion	&amp;Spirituality</p>
+                <p><input type="checkbox">Romance</p>
+                <p><input type="checkbox">Science</p>
+                <p><input type="checkbox">Science Fiction	&amp;Fantasy</p>
+                <p class="help"><input type="checkbox">Self-help</p>
+                <p><input type="checkbox">Teen	&amp;Young Adult</p>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '34%';
+            document.getElementById('main').style.marginLeft = '34%';
+            document.getElementById('title').style.marginLeft = '25%';
+            document.getElementById('map').style.marginLeft = '5%';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+            document.getElementById('title').style.marginLeft = '0';
+            document.getElementById('map').style.marginLeft = '20%';
+        }
+    </script>
+</body>
+        </html>

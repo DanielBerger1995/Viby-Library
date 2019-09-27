@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sidenav</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b555ce4ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="print.css">
+</head>
+
+<body>
+    <header class="logo_header">
+        <a href="firstpage.html"><div class="both_owl">
+            <img src="awake.png" alt="Open eyes" class="open_eyes">
+            <img src="sleepy.png" alt="blink" class="full_blink">
+        </div></a>
+        <h3 id="title" class="title">VIBY LIBRARY</h3>
+    </header>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                M <br>
+                E<br>
+                N <br>
+                U <br>
+            </a>
+        </span>
+
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <div class="nav_top">
+            <a href="explore.html" class="nav_links"><img src="explore1.png" alt="e_icon" class="e_icon" ></a>
+            <a href="event.html" class="nav_links"> <img src="events1.png" alt="e-icon" class="e_icon"></a>
+            <a href="print.html" class="nav_links"><img src="print1.png" alt="" class="e_icon"></a>
+            <a href="map.html" class="nav_links"> <img src="map1%20icon.png" alt="e_icon" class="e_icon"></a>
+        </div>
+        <div class="nav_bot">
+            <a href="scan.html" class="nav_links"><img src="borrow1.png" alt="" class="e_icon"></a>
+            <a href="place.html" class="nav_links"><img src="return1.png" alt="" class="e_icon"></a>
+
+        </div>
+    </div>
+
+    <div id="main">
+
+
+
+
+
+<img src="MYPRINT.png" alt="" class="img" style="width: 100%;height: 100%;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '34%';
+            document.getElementById('main').style.marginLeft = '34%';
+            document.getElementById('title').style.marginLeft = '25%';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+            document.getElementById('title').style.marginLeft = '0';
+        }
+    </script>

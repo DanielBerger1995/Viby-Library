@@ -1,0 +1,188 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.bodycontainer {
+    height: 100%;
+    background-color: #585858;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.logo_header {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    width: 100%;
+    background: #fd7f0f;
+}
+
+.open_eyes {
+    top: 0;
+    left: 5%;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    position: absolute;
+    animation-name: owl;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    z-index: 5;
+
+}
+
+.full_blink {
+    top: 0;
+    left: 5%;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    position: absolute;
+    z-index: 4;
+}
+
+@keyframes owl {
+    0% {
+        opacity: 8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.title {
+    position: absolute;
+    left: 15%;
+    transition: margin-left 0.5s;
+    color: white;
+
+}
+
+.orangetitle {
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+
+.title {
+    padding: inherit;
+    width: auto;
+    margin-top: 10px;
+    align-content: center;
+    margin-bottom: 10px;
+
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+
+    width: 180px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-style: none;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px 0 10px 0;
+
+    border-radius: 50px;
+    letter-spacing: 3px;
+    background-color: #585858;
+transition: 0.4s;
+
+
+}
+
+.btn1 {
+
+    width: 180px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-style: none;
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 50px;
+    letter-spacing: 3px;
+    background-color: #585858;
+    transition: 0.4s;
+
+}
+.icon {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+
+
+
+}
+
+
+
+.buttontext {
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    margin-top: 5px;
+
+
+
+
+}
+
+
+.btn1:hover {
+     background-color: #fd7f0f;
+    border-color: #fd7f0f;
+}
+
+.btn:hover {
+    background-color: #fd7f0f;
+    border-color: #fd7f0f;
+
+}
+
+.couples {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Scanning of the card</title>
+    <link rel="stylesheet" href="place.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body >
+    <header class="logo_header">
+        <a href="firstpage.html"><div class="both_owl">
+            <img src="awake.png" alt="Open eyes" class="open_eyes">
+            <img src="sleepy.png" alt="blink" class="full_blink">
+        </div></a>
+        <h3 id="title" class="title">VIBY LIBRARY</h3>
+    </header>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                M <br>
+                E<br>
+                N <br>
+                U <br>
+            </a>
+        </span>
+
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <div class="nav_top">
+            <a href="explore.html" class="nav_links"><img src="explore1.png" alt="e_icon" class="e_icon" ></a>
+            <a href="event.html" class="nav_links"> <img src="events1.png" alt="e-icon" class="e_icon"></a>
+            <a href="print.html" class="nav_links"><img src="print1.png" alt="" class="e_icon"></a>
+            <a href="map.html" class="nav_links"> <img src="map1%20icon.png" alt="e_icon" class="e_icon"></a>
+        </div>
+        <div class="nav_bot">
+            <a href="scan.html" class="nav_links"><img src="borrow1.png" alt="" class="e_icon"></a>
+            <a href="place.html" class="nav_links"><img src="return1.png" alt="" class="e_icon"></a>
+
+        </div>
+    </div>
+
+    <div id="main">
+    <section class="scanning">
+        <div class="textborder">
+            <h3 class="text">Place your books</h3>
+        </div>
+
+        <img src="images/screen.png" alt="Image of screen" class="screen" >
+        <a href="returnpage.html"><img src="images/alldone.png" alt="alldone" class="alldone"></a>
+        </section>
+
+    <footer>
+        <h3 class="back">Back</h3>
+    </footer>
+    </div>
+<script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '34%';
+            document.getElementById('main').style.marginLeft = '17%';
+            document.getElementById('title').style.marginLeft = '25%';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+            document.getElementById('title').style.marginLeft = '0';
+        }
+    </script>
+</body></html>

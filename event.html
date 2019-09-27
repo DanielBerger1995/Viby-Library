@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <link rel="stylesheet" href="event.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/3b555ce4ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <header class="logo_header">
+        <a href="firstpage.html"><div class="both_owl">
+            <img src="awake.png" alt="Open eyes" class="open_eyes">
+            <img src="sleepy.png" alt="blink" class="full_blink">
+        </div></a>
+        <h3 id="title" class="title">VIBY LIBRARY</h3>
+    </header>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                M <br>
+                E<br>
+                N <br>
+                U <br>
+            </a>
+        </span>
+
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <div class="nav_top">
+            <a href="explore.html" class="nav_links"><img src="explore1.png" alt="e_icon" class="e_icon" ></a>
+            <a href="event.html" class="nav_links"> <img src="events1.png" alt="e-icon" class="e_icon"></a>
+            <a href="print.html" class="nav_links"><img src="print1.png" alt="" class="e_icon"></a>
+            <a href="map.html" class="nav_links"> <img src="map1%20icon.png" alt="e_icon" class="e_icon"></a>
+        </div>
+        <div class="nav_bot">
+            <a href="scan.html" class="nav_links"><img src="borrow1.png" alt="" class="e_icon"></a>
+            <a href="place.html" class="nav_links"><img src="return1.png" alt="" class="e_icon"></a>
+
+        </div>
+    </div>
+
+    <div id="main">
+
+    <main>
+                     <div class="stuff">
+                      <h1>EVENTS</h1>
+                       <div class="search_bar">
+                    <input class="search_text" type="text" placeholder="Type to search">
+                    <a href="#" class="search_button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+        </div>
+        <div class="thisweek">
+            <h2>This week</h2>
+            <div class="flex">
+            <img src="arrow2.png" alt="Arrow" class="arrow">
+            <div class="event_box">
+                <img src="art.jpg" alt="Art">
+                <div class="details">
+                <h3>Art exhibition</h3>
+                <h4>2/09/19 - 30/09/19</h4>
+                </div>
+                <h4 class="free">Free entrance</h4>
+            </div>
+            <div class="event_box">
+                <img src="travel.webp" alt="Travel">
+                <div class="details">
+                <h3>How to travel on a budget</h3>
+                <h4>28/09/19</h4>
+                </div>
+                <h4 class="free">Free entrance</h4>
+            </div>
+            <div class="event_box">
+                <img src="book.jpg" alt="Book">
+                <div class="details">
+                <h3>Book Club: First meeting</h3>
+                <h4>30/09/19</h4>
+                </div>
+                <h4 class="free">Free entrance</h4>
+            </div>
+            <img src="arrow.png" alt="Arrow" class="arrow">
+            </div>
+        </div>
+        <br>
+        <div class="thisweek">
+            <h2>For children</h2>
+            <div class="flex">
+            <img src="arrow2.png" alt="Arrow" class="arrow">
+            <div class="event_box">
+                <img src="pooh.webp" alt="Winnie the Pooh">
+                <div class="details">
+                <h3>Reading: <br>Winnie the Pooh</h3>
+                <h4>07/09/19</h4>
+                </div>
+                <h4 class="free">Free entrance</h4>
+            </div>
+            <div class="event_box">
+                <img src="crafts.jpg" alt="Crafts">
+                <div class="details">
+                <h3>Morning craft time</h3>
+                <h4>05/10/19</h4>
+                </div>
+                <h4 class="free">Free entrance</h4>
+            </div>
+            <div class="event_box">
+                <img src="family.jpg" alt="Family">
+                <div class="details">
+                <h3>Family storytime</h3>
+                <h4>29/10/19</h4>
+                </div>
+                <h4 class="free">Free entrance</h4>
+            </div>
+            <img src="arrow.png" alt="Arrow" class="arrow">
+            </div>
+        </div>
+    </main>
+    </div>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '34%';
+            document.getElementById('main').style.marginLeft = '34%';
+            document.getElementById('title').style.marginLeft = '25%';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+            document.getElementById('title').style.marginLeft = '0';
+        }
+    </script>
+</body>
+</html>
